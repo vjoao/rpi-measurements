@@ -1,0 +1,11 @@
+[Unit]
+Description=GPIO 12 HIGH after boot
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/gpio mode 1 out
+ExecStart=/usr/bin/gpio write 1 1
+
+[Install]
+WantedBy=multi-user.target

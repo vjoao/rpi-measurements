@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "readserial.py", line 18, in <module>
+    main()
+  File "readserial.py", line 11, in main
+    reading = ser.readline().decode('utf-8')
+  File "/usr/lib/python3.6/site-packages/serial/serialposix.py", line 461, in read
+    ready,_,_ = select.select([self.fd],[],[], self._timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "readserial.py", line 18, in <module>
+    main()
+  File "readserial.py", line 11, in main
+    reading = ser.readline().decode('utf-8')
+  File "/usr/lib/python3.6/site-packages/serial/serialposix.py", line 461, in read
+    ready,_,_ = select.select([self.fd],[],[], self._timeout)
+KeyboardInterrupt
